@@ -1,0 +1,220 @@
+#cabecera{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    padding: 20px;
+  }
+#cabecera1{
+  position: relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  padding: 20px;
+}
+.navegador{
+  display: block;
+  position: relative;
+  left: 530px;
+  padding: 10px;
+  bottom: 300px;
+}  
+#historia{
+  position: relative;
+  bottom: 30px;
+}
+#sugerencias{
+  position: relative;
+  bottom: 30px;
+}
+#tecnologia{
+  position: relative;
+  top: 10px;
+  right: 25px;
+}
+.div{
+  height: 500px;
+}
+#auto{
+  margin:auto;
+  display:inline-block;
+  position: relative;
+  left:110px;
+}
+#cinad{
+  display: block;
+  position: relative;
+  bottom: 300px;
+  left:630px;
+}
+#cinat{
+  display: block;
+  position: relative;
+  bottom: 535px;
+  left:830px;
+}
+#silla{
+  display: block;
+  position: relative;
+  bottom: 610px;
+  left:780px; 
+}
+#airbag{
+  display: block;
+  position: relative;
+  bottom: 840px;
+  left:500px;
+}
+.tit{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 30px;
+color: white;
+text-align: center;
+}
+.des{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+  color: white;
+  text-align: center; 
+}
+.ic{
+  display: block;
+  position: relative;
+  left: 475px;
+}
+.multa{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+  color: white;
+  display: block;
+  position: relative;
+  left: 615px;
+  bottom: 70px;
+
+}
+.semicirculo {
+  width: 300px; 
+  height: 150px; 
+  border: 5px solid white; 
+  background: transparent;
+  -moz-border-radius: 300px 300px 0 0;
+  -webkit-border-radius: 300px 300px 0 0;
+  border-radius: 300px 300px 0 0;
+  display: block;
+  position: relative;
+  left:480px;
+}
+.triangulo{
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 100px solid red;
+  display: block;
+  position: relative;
+  left:140px;
+  top:40px;
+  transform-origin:bottom;
+
+}
+.vel1{
+  display: block;
+  position: relative;
+  width:320px;
+  bottom:120px;
+  right:13px;
+}
+.vel2{
+  display: block;
+  position: relative;
+  width:320px;
+  bottom:114px;
+  right:10px;
+}
+.vel3{
+  display: block;
+  position: relative;
+  width:313px;
+  bottom:120px;
+  right:6px;
+}
+.vel4{
+  display: block;
+  position: relative;
+  width:315px;
+  bottom:117px;
+  right:7px;
+}
+#cad1{
+  display: block;
+  position: relative;
+  top:75px;
+  left:375px;
+  background-color: transparent;
+  color:white;
+}
+#cat1{
+  display: block;
+  position: relative;
+  top:85px;
+  left:375px;
+  background-color: transparent;
+  color:white;
+}
+#s1{
+  display: block;
+  position: relative;
+  top:90px;
+  left:375px;
+  background-color: transparent;
+  color:white;
+}
+#a1{
+  display: block;
+  position: relative;
+  top:75px;
+  left:375px;
+  background-color: transparent;
+  color:white;
+}
+#cad2{
+  display: block;
+  position: relative;
+  bottom: 109px;
+  left:810px;
+  background-color: transparent;
+  color:white;
+  
+  
+}
+#cat2{
+  display: block;
+  position: relative;
+  bottom: 100px;
+  left:810px;
+  background-color: transparent;
+  color:white;
+  
+}
+#s2{
+  display: block;
+  position: relative;
+  left:810px;
+  bottom: 95px;
+  background-color: transparent;
+  color:white;
+  
+  
+}
+#a2{
+  display: block;
+  position: relative;
+  left:810px;
+  bottom:110px;
+  background-color: transparent;
+  color:white;
+}
+
+.mover{
+  position: relative;
+  bottom: 180px;
+}
