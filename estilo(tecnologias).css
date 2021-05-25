@@ -1,12 +1,16 @@
+@font-face{
+  font-family:letratexto;
+  src: url(Letra1.TTF);
+}
 #cabecera{
     position: relative;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:letratexto;
     font-size: 60px;
     padding: 20px;
   }
 #cabecera1{
   position: relative;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:letratexto;
   font-size: 40px;
   padding: 20px;
 }
@@ -64,13 +68,13 @@
   left:500px;
 }
 .tit{
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-family:letratexto;
 font-size: 30px;
 color: white;
 text-align: center;
 }
 .des{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:letratexto;
   font-size: 17px;
   color: white;
   text-align: center; 
@@ -81,7 +85,7 @@ text-align: center;
   left: 475px;
 }
 .multa{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:letratexto;
   font-size: 17px;
   color: white;
   display: block;

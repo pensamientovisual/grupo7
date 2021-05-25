@@ -1,7 +1,11 @@
-
+@font-face{
+  font-family:letratexto;
+  src: url(Letra1.TTF);
+}
 .semaforo{
   position: relative;
   left: 180px;
+  bottom: 180px;
 }
 #rojo{
     display: block;
@@ -9,7 +13,7 @@
     height: 130px;
     border-radius: 50%;
     position: absolute;
-    bottom:435px;
+    bottom:615px;
     left: 622px;
   }
 
@@ -19,7 +23,7 @@
     height: 130px;
     border-radius: 50%;
     position: absolute;
-    bottom:275px;
+    bottom:455px;
     left:622px;
   }
 #verde{
@@ -28,7 +32,7 @@
     height: 130px;
     border-radius: 50%;
     position: absolute;
-    bottom:115px;
+    bottom:295px;
     left:622px;
   }
 .divs{
@@ -36,37 +40,36 @@
     display:inline-block;
     position: relative;
     padding-bottom: 80px;
-
   }
 
 .maloizquierda{
     display: block;
     width: 400px;
     position: absolute;
-    bottom:160px;
+    bottom:314px;
     right:600px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:letratexto;
     font-size: 30px;
 }
 .maloderecha{
     display: block;
     width: 400px;
     position: absolute;
-    bottom:200px;
+    bottom:360px;
     left:850px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:letratexto;
     font-size: 30px;
 }
 .medianoizquierda{
     display: block;
     width: 400px;
     position: absolute;
-    bottom:120px;
+    bottom:300px;
     right:600px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:letratexto;
     font-size: 30px;
 }
 .medianoderecha{
@@ -74,60 +77,71 @@
     display: block;
     width: 400px;
     position: absolute;
-    bottom:160px;
+    bottom:340px;
     left:850px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:letratexto;
     font-size: 30px;
 }
 .buenoizquierda{
     display: block;
     width: 400px;
     position: absolute;
-    bottom:160px;
+    bottom:340px;
     right:600px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:letratexto;
     font-size: 30px;
 }
 .buenoderecha{
     display: block;
     width: 400px;
     position: absolute;
-    bottom: 120px;
+    bottom: 300px;
     left:850px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:letratexto;
     font-size: 30px;
 }
 .tr{
     text-align: center;
     background-color: red;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:letratexto;
     font-size:30px;
 }
 .tv{
     text-align: center;
     background-color: #2EDF0A;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:letratexto;
     font-size:30px;
 }
 .ta{
     text-align: center;
-    background-color: yellow;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: yellow;
+    font-family:letratexto;
     font-size:30px;
 }
 #cabecera{
   position: relative;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 60px;
+  font-family:letratexto;
+  font-size: 50px;
   padding: 20px;
+
 }
 #cabecera1{
   position: relative;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:letratexto;
   font-size: 40px;
   padding: 20px;
+}
+#instruccion{
+  position: relative;
+  bottom:300px; 
+  padding:20px;
+  font-family:letratexto;
+  margin: 10px 20px 10px 5px;
+  font-size:20px;
+
 }
 .navegador{
   display: block;
@@ -136,6 +150,11 @@
   padding: 10px;
   bottom: 300px;
 
+}
+#divcolores{
+  position: relative;
+  bottom: 200px;
+  padding: 10px;
 }
 #historia{
   position: relative;

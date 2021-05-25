@@ -449,39 +449,6 @@ $(document).ready(function(){
         $('#fa1').attr("src", "Fotos_autos/Auto7.png");
         }        };
 
-    // $(function() {
-    //     $("#g1").hide();
-            
-    //     function grafico() {
-    //         $("#g1").show();
-            
-    //     }
-            
-    //     $(bf1).click(function(){
-                
-   
-    //     grafico();
-                
-    //     });
-
-    // });
-
-    // $(function() {
-    //     $("#g1").hide();
-            
-    //     function grafico() {
-    //         $("#g1").show();
-            
-    //     }
-            
-    //     $(bf1).click(function(){
-                
-   
-    //     grafico();
-                
-    //     });
-
-    // });
 
     var graficos=0;
     var graficos2=0;
@@ -584,7 +551,7 @@ $(document).ready(function(){
     //////////////////////////////////////////////////////////////////////////
     function graph5(){
         if (graficos5==1){    
-        $('#g5').attr("src", "Velocimetro/Impridencia_Peaton_M.png");
+        $('#g5').attr("src", "Velocimetro/Imprudencia_Peaton_M.png");
     
         }
         if (graficos5==2){
@@ -634,24 +601,46 @@ $(document).ready(function(){
 
  function graph7(){
     if (graficos7==1){    
-    $('#g7').attr("src", "Señalizacion_M.png");
+    $('#g7').attr("src", "Velocimetro/S_M.png");
 
     }
     if (graficos7==2){
-    $('#g7').attr("src", "Velocimetro/Señalizacion_LG.png");
+    $('#g7').attr("src", "Velocimetro/S_LG.png");
 
      }
     if (graficos7==3){
-     $('#g7').attr("src", "Velocimetro/Señalizacion_LM.png");
+    $('#g7').attr("src", "S_LM.png");
+
      }
      if (graficos7==4){
-     $('#g7').attr("src","Señalizacion_LL.png");
+    $('#g7').attr("src","S_LL.png");
 
      }
      if (graficos7==5){
-     $('#g7').attr("src", "Velocimetro/Señalizacion_LT.png");
-
+    $('#g7').attr("src","S_LT.png");
+    
      } };
+
+ /* function graph7(){
+    if (graficos7==1){    
+    $('#g7').attr("src","Velocimetro/S_M.png");
+
+    }
+    if (graficos7==2){
+    $('#g7').attr("src", "Velocimetro/S_LG.png");
+
+     }
+    if (graficos7==3){
+     $('#g7').attr("src", "Velocimetro/S_LM.png");
+     }
+     if (graficos7==4){
+     $('#g7').attr("src","Velocimetro/S_LL.png");
+
+     }
+     if (graficos7==5){
+     $('#g7').attr("src","Velocimetro/S_LT.png");
+
+     } }; */
 
 
  ////////////////////////////////////////////////////////////////////////////////

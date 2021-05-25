@@ -38,6 +38,37 @@ $(document).ready(function(){
     $("#cuadro4").hide();
     $("#textocuadro4").hide();
 
+    $("#boton1").mouseenter(function(){
+        $("#boton1").css("opacity",1);
+    })
+    $("#boton1").mouseleave(function(){
+        $("#boton1").css("opacity",0.8);
+    })
+    $("#boton2").mouseenter(function(){
+        $("#boton2").css("opacity",1);
+    })
+    $("#boton2").mouseleave(function(){
+        $("#boton2").css("opacity",0.8);
+    })
+    $("#boton3").mouseenter(function(){
+        $("#boton3").css("opacity",1);
+    })
+    $("#boton3").mouseleave(function(){
+        $("#boton3").css("opacity",0.8);
+    })
+    $("#boton4").mouseenter(function(){
+        $("#boton4").css("opacity",1);
+    })
+    $("#boton4").mouseleave(function(){
+        $("#boton4").css("opacity",0.8);
+    })
+    $("#bandera").mouseenter(function(){
+        $("#bandera").css("opacity",1);
+    })
+    $("#bandera").mouseleave(function(){
+        $("#boton1").css("opacity",0.8);
+    })
+
 $("#boton1").click(function(){
     $("#boton1").css("opacity",1);
     $("#boton2").css("opacity",0.8);
@@ -239,7 +270,7 @@ $("#bandera").click(function(){
     $("#textocuadro4").hide();
     $("#multa3").hide();
 })
+
+
 })
 
-//$("#boton1").mouseenter(function(){
-  //  $("#boton1").css("opacity",0.8);
