@@ -601,7 +601,7 @@ $(document).ready(function(){
 
  function graph7(){
     if (graficos7==1){    
-    $('#g7').attr("src", "Velocimetro/S_M.png");
+    $('#g7').attr("src", "Velocimetro/S_F.png");
 
     }
     if (graficos7==2){
@@ -609,39 +609,17 @@ $(document).ready(function(){
 
      }
     if (graficos7==3){
-    $('#g7').attr("src", "S_LM.png");
+    $('#g7').attr("src", "Velocimetro/S_LM.png");
 
      }
      if (graficos7==4){
-    $('#g7').attr("src","S_LL.png");
+    $('#g7').attr("src","Velocimetro/S_LL.png");
 
      }
      if (graficos7==5){
-    $('#g7').attr("src","S_LT.png");
+    $('#g7').attr("src", "Velocimetro/S_LT.png");
     
      } };
-
- /* function graph7(){
-    if (graficos7==1){    
-    $('#g7').attr("src","Velocimetro/S_M.png");
-
-    }
-    if (graficos7==2){
-    $('#g7').attr("src", "Velocimetro/S_LG.png");
-
-     }
-    if (graficos7==3){
-     $('#g7').attr("src", "Velocimetro/S_LM.png");
-     }
-     if (graficos7==4){
-     $('#g7').attr("src","Velocimetro/S_LL.png");
-
-     }
-     if (graficos7==5){
-     $('#g7').attr("src","Velocimetro/S_LT.png");
-
-     } }; */
-
 
  ////////////////////////////////////////////////////////////////////////////////
     bf1.click(function(){
@@ -872,7 +850,108 @@ $('#botonLT7').click(function(){
 });
 
 
+boton1.mouseenter(function(){
+    $(this).fadeTo("fast",0.5);
+
+});
+
+boton1.mouseleave(function(){
+    $(this).fadeTo("fast",1);
 
     }); 
         
+boton2.mouseenter(function(){
+    $(this).fadeTo("fast",0.5);
+    
+    });
+    
+boton2.mouseleave(function(){
+    $(this).fadeTo("fast",1);
+    
+        }); 
 
+boton3.mouseenter(function(){
+    $(this).fadeTo("fast",0.5);
+    
+    });
+    
+boton3.mouseleave(function(){
+    $(this).fadeTo("fast",1);
+    
+        }); 
+    
+boton4.mouseenter(function(){
+    $(this).fadeTo("fast",0.5);
+    
+    });
+    
+boton4.mouseleave(function(){
+    $(this).fadeTo("fast",1);
+    
+        }); 
+
+boton5.mouseenter(function(){
+    $(this).fadeTo("fast",0.5);
+    
+    });
+    
+boton5.mouseleave(function(){
+    $(this).fadeTo("fast",1);
+    
+    });
+boton6.mouseenter(function(){
+    $(this).fadeTo("fast",0.5);
+            
+    });
+            
+boton6.mouseleave(function(){
+    $(this).fadeTo("fast",1);
+            
+    });
+boton7.mouseenter(function(){
+    $(this).fadeTo("fast",0.5);
+                
+});
+                
+boton7.mouseleave(function(){
+    $(this).fadeTo("fast",1);
+                
+});      
+
+$("#inicio").mouseenter(function(){
+    $(this).fadeTo("fast",0.5);
+                
+});
+                
+$("#inicio").mouseleave(function(){
+    $(this).fadeTo("fast",1);
+                
+});      
+$("#sugerencias").mouseenter(function(){
+    $(this).fadeTo("fast",0.5);
+                
+});
+                
+$("#sugerencias").mouseleave(function(){
+    $(this).fadeTo("fast",1);
+                
+});  
+$("#tecnologia").mouseenter(function(){
+    $(this).fadeTo("fast",0.5);
+                
+});
+                
+$("#tecnologia").mouseleave(function(){
+    $(this).fadeTo("fast",1);
+                
+});    
+$("#historia").mouseenter(function(){
+    $(this).fadeTo("fast",0.5);
+                
+});
+                
+$("#historia").mouseleave(function(){
+    $(this).fadeTo("fast",1);
+                
+});            
+});
