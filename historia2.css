@@ -1,67 +1,174 @@
 @font-face{
-    font-family:letratexto;
-    src: url(Letra1.TTF);
+    font-family:letra;
+    src: url(letra3.ttf);
 
 }
-
-
 #cabecera{
-    position: relative;
-    font-family: letratexto;
-    font-size: 50px;
-    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    color: white;
+    margin:0;
+    text-align: left;
+    padding-top:15px ;
 }
-#cabecera1{
-    position: relative;
-    font-family: letratexto;
+
+#cabecera2{
+    font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
-    padding: 20px;
+    color:black;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 30px;
+    text-decoration:underline;
+    text-align: left;
 }
-.navegador{
+#navegador1 {
+    padding: 0;
+    list-style: none;
+    padding: bottom 0;
+    text-align:right;
     position: relative;
-    display: block;
-    left: 530px;
-    padding: 10px;
-    bottom: 300px; 
+    bottom: 80px;
 }
-#inicio{
-    position: relative;
-    bottom: 5px;   
+#fondo{
+    background-color:  #323538;
+    height: 20px;
+    margin: 0%;
+  
 }
-#historia{
-    position: relative;
-    bottom: 30px;
+#lineas{
+    background-color: #323538;
+    height: 100px;
+    padding:0% ;
+  
 }
-#sugerencias{
-    position: relative;
-    bottom: 30px;
+#instruccion{
+    padding-bottom: 80px;
 }
-#tecnologia{
-    position: relative;
-    top: 10px;
-    right: 25px;
+.graficos{
+    margin: auto;
+    padding-left: 30px;
+
 
 }
-#leyrota{
-    position: absolute;
+#bandera{
+    position: relative;
+    bottom: 325px;
+    right: 650px;
+  
+    transform: rotate(20deg);
+}
+#boton1{
+    position: relative;
+    right: 555px;
+    bottom: 320px;
+    z-index: 100;
+}
+#boton2{
+    position: relative;
+    right: 455px;
+    bottom: 295px;
+    z-index: 100;
+}
+#boton3{
+    position: relative;
+    right: 415px;
+    bottom: 270px;
+    z-index: 100;
+}
+#boton4{
+    position: relative;
+    right: 260px;
+    bottom: 230px;
+    z-index: 100;
+}
+
+#auto1{
+    position: relative;
+    right:820px;
+    bottom: 280px;
+    transform: rotate(10deg);
+    z-index: 100;
+}
+#auto2{
+    position: relative;
+    right:690px;
+    bottom: 250px;
+    z-index: 100;
+}
+#auto3{
+    position: relative;
+    right:570px;
+    bottom: 220px;
+    transform: rotate(10deg);
+    z-index: 100;
+}
+#auto4{
+    position: relative;
+    right: 430;
+    bottom: 190px;
+    transform: rotate(5deg);
+    z-index: 100;
+}
+#auto5{
+    position: relative;
+    right: 280px;
+    bottom: 150px;
+    transform: rotate(10deg);
+    z-index: 100;
+}
+
+#ejeY{
+    position: relative;
     font-family: letratexto;
-    font-size: larger;
-    left: 115px;
-    bottom: 180px;
+   
+    right: 620px;
+    bottom: 640px;
     transform: rotate(-90deg);
+    z-index: 100;
+    color: white;
+}
+
+#ley1{
+    position: relative;
+    font-family: letratexto;
+    font-size: 13px;
+    left: 85px;
+    bottom: 50px;
     z-index: 100;
     color: white;
     font-stretch:extra-expanded;
 }
-#leyrota2{
-    position: absolute;
+#ley2{
+    position: relative;
     font-family:letratexto;
-    font-size: larger;
-    left: 320px;
-    bottom: 180px;
-    transform: rotate(-90deg);
+    font-size: 13px;
+    left: 250px;
+    bottom: 77px;
     z-index: 100;
     color: white;
+}
+#ley3{
+    position: relative;
+    font-family: letratexto;
+    font-size: 13px;
+    left: 325px;
+    bottom: 105px;
+    z-index: 100;
+    color: white;
+}
+
+#ley4{
+    position: relative;
+    font-family: letratexto;
+    font-size: 13px;
+    left: 530px;
+    bottom: 135px;
+    z-index: 100;
+    color: white;
+}
+/* 
+
 }
 #linea2{
     position: absolute;
@@ -70,26 +177,8 @@
     transform: rotate(-90deg);
     
 }
-#margen{
-    position: absolute;
-    font-family: letratexto;
-    font-size: larger;
-    left: -130px;
-    bottom: 260px;
-    transform: rotate(-90deg);
-    z-index: 100;
-    color: white;
-}
-#leyrota3{
-    position: absolute;
-    font-family: letratexto;
-    font-size: larger;
-    left: 379px;
-    bottom: 180px;
-    transform: rotate(-90deg);
-    z-index: 100;
-    color: white;
-}
+
+
 #linea3{
     position: absolute;
     left: 305px;
@@ -113,37 +202,9 @@
     bottom: -140px;
     transform: rotate(-90deg);
     
-}
-#grafico1{
-    position: absolute;
-    left: 50px;
-    bottom: 100px;
-    z-index: 90;
-}
-#grafico2{
-    position: absolute;
-    left: 216px;
-    bottom: 100px;
-    z-index: 90;
-}
-#grafico3{
-    position: absolute;
-    left: 378px;
-    bottom: 100px;
-    z-index: 90;
-}
-#grafico4{
-    position: absolute;
-    left: 466px;
-    bottom: 100px;
-    z-index: 90;
-}
-#grafico5{
-    position: absolute;
-    left: 702px;
-    bottom: 100px;
-    z-index: 90;
-}
+}*/
+
+/*
 #texto{
     position: absolute;
     left: 30px;
@@ -416,11 +477,14 @@
     width: 500px;
     bottom:120px;
     opacity: 0.7;
-}
-.ale{
-    position:relative;
-    bottom: -400px;
-}
+}*/
+/* .ale{
+   text-align: left;
+   margin: auto;
+   
+
+} */
+/*
 #lineas{
     position: absolute;
     bottom: -100px;
@@ -464,4 +528,4 @@
     bottom: 130px;
     z-index: 100;
     font-size: large;
-}
+} */

@@ -2,38 +2,91 @@
   font-family:letratexto;
   src: url(Letra1.TTF);
 }
-.semaforo{
+
+#cabecera{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  color: white;
+  margin:0;
+  text-align: left;
+  padding-top:15px ;
+}
+
+#cabecera2{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  color:black;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 30px;
+  text-decoration:underline;
+  text-align: left;
+}
+#navegador1 {
+  padding: 0;
+  list-style: none;
+  padding: bottom 0;
+  text-align:right;
   position: relative;
-  left: 180px;
-  bottom: 180px;
+  bottom: 80px;
+}
+
+#instruccion{
+  text-align: left;
+}
+
+#fondo{
+  background-color:  #323538;
+  height: 20px;
+  margin: 0%;
+
+}
+#lineas{
+  background-color: #323538;
+  height: 100px;
+  padding:0% ;
+
+}
+body{
+  text-align: center;
+  position: relative;
+
+}
+.semaforo{
+  text-align: center;
+  display: block;
+  position: relative;
+  margin: 20px,20px,20px,20px;
+  top: 60px;
 }
 #rojo{
-    display: block;
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    position: absolute;
-    bottom:615px;
-    left: 622px;
-  }
+  text-align: center;
+  display: block;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  position: relative;
+  bottom:425px;
+  left: 445px;
+}
 
 #amarillo{
     display: block;
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    position: absolute;
-    bottom:455px;
-    left:622px;
+    position: relative;
+    bottom:390px;
+    left:445px;
   }
 #verde{
     display: block;
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    position: absolute;
-    bottom:295px;
-    left:622px;
+    position: relative;
+    bottom:365px;
+    left:445px;
   }
 .divs{
     text-align: center;
@@ -45,9 +98,9 @@
 .maloizquierda{
     display: block;
     width: 400px;
-    position: absolute;
-    bottom:314px;
-    right:600px;
+    position: relative;
+    bottom:800px;
+    left: -200px;
     color: white;
     font-family:letratexto;
     font-size: 30px;
@@ -55,50 +108,50 @@
 .maloderecha{
     display: block;
     width: 400px;
-    position: absolute;
-    bottom:360px;
-    left:850px;
+    position: relative;
+    bottom: 1100px;
+    left: 670px;
     color: white;
     font-family:letratexto;
     font-size: 30px;
 }
 .medianoizquierda{
-    display: block;
+    display: inline-block;
     width: 400px;
-    position: absolute;
-    bottom:300px;
-    right:600px;
+    position: relative;
+    bottom:900px;
+    left: -250px;
     color: white;
     font-family:letratexto;
     font-size: 30px;
 }
 .medianoderecha{
     font-size: 16px;
-    display: block;
+    display: inline-block;
     width: 400px;
-    position: absolute;
-    bottom:340px;
-    left:850px;
+    position: relative;
+    left: 200px;
+    bottom: 900px;
     color: white;
     font-family:letratexto;
     font-size: 30px;
 }
 .buenoizquierda{
-    display: block;
+    display: inline-block;
     width: 400px;
-    position: absolute;
-    bottom:340px;
-    right:600px;
+    position: relative;
+    bottom:900px;
+    left: -250px;
     color: white;
     font-family:letratexto;
     font-size: 30px;
 }
 .buenoderecha{
-    display: block;
+    display: inline-block;
     width: 400px;
-    position: absolute;
-    bottom: 300px;
-    left:850px;
+    position: relative;
+    bottom: 900px;
+    left: 200px;
     color: white;
     font-family:letratexto;
     font-size: 30px;
@@ -121,51 +174,12 @@
     font-family:letratexto;
     font-size:30px;
 }
-#cabecera{
-  position: relative;
-  font-family:letratexto;
-  font-size: 50px;
-  padding: 20px;
 
-}
-#cabecera1{
-  position: relative;
-  font-family:letratexto;
-  font-size: 40px;
-  padding: 20px;
-}
-#instruccion{
-  position: relative;
-  bottom:300px; 
-  padding:20px;
-  font-family:letratexto;
-  margin: 10px 20px 10px 5px;
-  font-size:20px;
 
-}
-.navegador{
-  display: block;
-  position: relative;
-  left: 530px;
-  padding: 10px;
-  bottom: 300px;
-
-}
 #divcolores{
   position: relative;
-  bottom: 200px;
   padding: 10px;
 }
-#historia{
-  position: relative;
-  bottom: 30px;
-}
-#sugerencias{
-  position: relative;
-  bottom: 30px;
-}
-#tecnologia{
-  position: relative;
-  top: 10px;
-  right: 25px;
-}
+
+
+

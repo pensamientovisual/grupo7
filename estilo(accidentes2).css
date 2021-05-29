@@ -1,0 +1,62 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@font-face{
+    font-family:letra;
+    src: url(letra3.ttf);
+
+}
+#cabecera{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    color: white;
+    margin:0;
+    text-align: left;
+    padding-top:15px ;
+}
+
+#cabecera2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color:black;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 30px;
+    text-decoration:underline;
+    text-align: left;
+}
+#navegador1 {
+    padding: 0;
+    list-style: none;
+    padding: bottom 0;
+    text-align:right;
+    position: relative;
+    bottom: 80px;
+}
+#fondo{
+    background-color:  #323538;
+    height: 20px;
+    margin: 0%;
+  
+}
+#lineas{
+    background-color: #323538;
+    height: 100px;
+    padding:0% ;
+  
+}
+
+.fotos_lesiones{
+    padding-left: 40px;
+    display: grid;
+    text-align: left;   
+    margin-bottom: auto;
+}
+
+
+

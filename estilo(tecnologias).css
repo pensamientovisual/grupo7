@@ -3,86 +3,141 @@
   src: url(Letra1.TTF);
 }
 #cabecera{
-    position: relative;
-    font-family:letratexto;
-    font-size: 60px;
-    padding: 20px;
-  }
-#cabecera1{
-  position: relative;
-  font-family:letratexto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  color: white;
+  margin:0;
+  text-align: left;
+  padding-top:15px ;
+}
+
+#cabecera2{
+  font-family: 'Courier New', Courier, monospace;
   font-size: 40px;
-  padding: 20px;
+  color:black;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 30px;
+  text-decoration:underline;
+  text-align: left;
 }
-.navegador{
-  display: block;
+#navegador1 {
+  padding: 0;
+  list-style: none;
+  padding: bottom 0;
+  text-align:right;
   position: relative;
-  left: 530px;
-  padding: 10px;
-  bottom: 300px;
-}  
-#historia{
-  position: relative;
-  bottom: 30px;
+  bottom: 80px;
 }
-#sugerencias{
-  position: relative;
-  bottom: 30px;
+
+#lineas{
+  background-color: #323538;
+  height: 100px;
+  padding:0% ;
+
 }
-#tecnologia{
+#fondo{
+  background-color:  #323538;
+  height: 20px;
   position: relative;
-  top: 10px;
-  right: 25px;
+  top: 75px;
+  margin: 0%;
 }
+
+
+
+
 .div{
   height: 500px;
+  margin: 0%;
+  padding: 0;
 }
 #auto{
   margin:auto;
   display:inline-block;
   position: relative;
-  left:110px;
+  width: 500px;
 }
 #cinad{
   display: block;
   position: relative;
-  bottom: 300px;
-  left:630px;
+  bottom: 200px;
+  left:350px;
+  width: 60px;
+  height: 50px;
 }
 #cinat{
   display: block;
   position: relative;
-  bottom: 535px;
-  left:830px;
+  bottom: 270px;
+  left:250px;
+  width: 50px;
+  height: 80px;
 }
 #silla{
   display: block;
   position: relative;
-  bottom: 610px;
-  left:780px; 
+  bottom: 300px;
+  left:340px;
+  width: 95px;
+  height: 95px;
 }
 #airbag{
   display: block;
   position: relative;
-  bottom: 840px;
-  left:500px;
+  bottom: 400px;
+  left:172px;
+  height: 55px;
+  width: 55px;
+}
+.txcinad{
+  display: block;
+  position: relative;
+  bottom: 500px;
+  left: 400px;
+
+}
+.txcinat{
+  display: block;
+  position: relative;
+  bottom: 500px;
+  left: 400px;  
+}
+.txsilla{  
+  display: block;
+  position: relative;
+  bottom: 500px;
+  left: 400px;
+}
+.txairbag{  
+  display: block;
+  position: relative;
+  bottom: 500px;
+  left: 400px;
 }
 .tit{
 font-family:letratexto;
-font-size: 30px;
-color: white;
 text-align: center;
+font-size: 30px;
+position: relative;
+left: -50px;
+color: white;
 }
 .des{
   font-family:letratexto;
   font-size: 17px;
-  color: white;
+  position: relative;
+  left: 400px;
   text-align: center; 
+  width: 450px;
+  height: 450px;
+  color: white; 
 }
 .ic{
-  display: block;
+  display: inline-block;
   position: relative;
   left: 475px;
+  bottom: 310px;
 }
 .multa{
   font-family:letratexto;
@@ -91,8 +146,45 @@ text-align: center;
   display: block;
   position: relative;
   left: 615px;
-  bottom: 70px;
+  bottom: 380px;
 
+}
+.des1{
+  font-family:letratexto;
+  font-size: 17px;
+  position: relative;
+  left: 420px;
+  bottom: 280px;
+  text-align: center; 
+  width: 400px;
+  height: 400px;
+  color: white; 
+}
+.ic2{
+  display: inline-block;
+  position: relative;
+  left: 455px;
+  bottom: 360px;
+}
+.des2{
+  font-family:letratexto;
+  font-size: 17px;
+  position: relative;
+  left: 380px;
+  text-align: center; 
+  width: 400px;
+  height: 400px;
+  color: white;
+  bottom: 350px;
+}
+.multa2{
+  font-family:letratexto;
+  font-size: 17px;
+  color: white;
+  display: block;
+  position: relative;
+  left: 580px;
+  bottom: 420px;
 }
 .semicirculo {
   width: 300px; 
@@ -105,6 +197,15 @@ text-align: center;
   display: block;
   position: relative;
   left:480px;
+  bottom: 1100px;
+}
+.botones{
+  position: relative;
+  bottom: 1100px;
+}
+.botones1{
+  position: relative;
+  bottom: 1100px;
 }
 .triangulo{
   width: 0;
@@ -118,7 +219,6 @@ text-align: center;
   left:140px;
   top:40px;
   transform-origin:bottom;
-
 }
 .vel1{
   display: block;
@@ -140,6 +240,7 @@ text-align: center;
   width:313px;
   bottom:120px;
   right:6px;
+
 }
 .vel4{
   display: block;
@@ -147,6 +248,7 @@ text-align: center;
   width:315px;
   bottom:117px;
   right:7px;
+
 }
 #cad1{
   display: block;
@@ -154,7 +256,7 @@ text-align: center;
   top:75px;
   left:375px;
   background-color: transparent;
-  color:white;
+  color: white;
 }
 #cat1{
   display: block;
@@ -187,7 +289,7 @@ text-align: center;
   left:810px;
   background-color: transparent;
   color:white;
-  
+
   
 }
 #cat2{
@@ -197,7 +299,6 @@ text-align: center;
   left:810px;
   background-color: transparent;
   color:white;
-  
 }
 #s2{
   display: block;
@@ -207,7 +308,6 @@ text-align: center;
   background-color: transparent;
   color:white;
   
-  
 }
 #a2{
   display: block;
@@ -216,9 +316,4 @@ text-align: center;
   bottom:110px;
   background-color: transparent;
   color:white;
-}
-
-.mover{
-  position: relative;
-  bottom: 180px;
 }
