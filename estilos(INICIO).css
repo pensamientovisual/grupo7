@@ -39,7 +39,16 @@ body{
 #ciudad{
     position:relative;
     top: 10px;
-    
+    margin: 0%;
 }
 
-
+#frase{
+    position: relative;
+    bottom: 130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    padding: 0%;
+    margin: 0%;
+}

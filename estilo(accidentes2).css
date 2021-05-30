@@ -4,15 +4,14 @@
     text-align: center;
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 @font-face{
     font-family:letra;
-    src: url(letra3.ttf);
+    src: url(letras/RutaCL2.ttf);
 
 }
 #cabecera{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: letra;
     font-size: 60px;
     color: white;
     margin:0;
@@ -21,7 +20,7 @@
 }
 
 #cabecera2{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: letra;
     font-size: 40px;
     color:black;
     margin-bottom: 0;
@@ -56,6 +55,10 @@
     display: grid;
     text-align: left;   
     margin-bottom: auto;
+}
+#instruccion{
+    font-family: letra;
+    font-size: 17px;
 }
 
 

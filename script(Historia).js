@@ -13,10 +13,10 @@ $(document).ready(function(){
     $("#leyemilia").hide();
     $("#leychat").hide();
     $("#ley50").hide();
-    $("#boton1").css("opacity",0.8);
-    $("#boton2").css("opacity",0.8);
-    $("#boton3").css("opacity",0.8);
-    $("#boton4").css("opacity",0.8);
+    $("#boton1").css("opacity",0.6);
+    $("#boton2").css("opacity",0.6);
+    $("#boton3").css("opacity",0.6);
+    $("#boton4").css("opacity",0.6);
     $("#billete").hide();
     $("#billete2").hide();
     $("#lice").hide();
@@ -42,38 +42,38 @@ $(document).ready(function(){
         $("#boton1").css("opacity",1);
     })
     $("#boton1").mouseleave(function(){
-        $("#boton1").css("opacity",0.8);
+        $("#boton1").css("opacity",0.6);
     })
     $("#boton2").mouseenter(function(){
         $("#boton2").css("opacity",1);
     })
     $("#boton2").mouseleave(function(){
-        $("#boton2").css("opacity",0.8);
+        $("#boton2").css("opacity",0.6);
     })
     $("#boton3").mouseenter(function(){
         $("#boton3").css("opacity",1);
     })
     $("#boton3").mouseleave(function(){
-        $("#boton3").css("opacity",0.8);
+        $("#boton3").css("opacity",0.6);
     })
     $("#boton4").mouseenter(function(){
         $("#boton4").css("opacity",1);
     })
     $("#boton4").mouseleave(function(){
-        $("#boton4").css("opacity",0.8);
+        $("#boton4").css("opacity",0.6);
     })
     $("#bandera").mouseenter(function(){
         $("#bandera").css("opacity",1);
     })
     $("#bandera").mouseleave(function(){
-        $("#boton1").css("opacity",0.8);
+        $("#boton1").css("opacity",0.6);
     })
 
 $("#boton1").click(function(){
     $("#boton1").css("opacity",1);
-    $("#boton2").css("opacity",0.8);
-    $("#boton3").css("opacity",0.8);
-    $("#boton4").css("opacity",0.8);
+    $("#boton2").css("opacity",0.6);
+    $("#boton3").css("opacity",0.6);
+    $("#boton4").css("opacity",0.6);
     $("#grafico1").css("opacity", 0.8);
     $("#grafico2").css("opacity", 1);
     $("#grafico3").css("opacity", 0.8);
@@ -111,10 +111,10 @@ $("#boton1").click(function(){
     
 })
 $("#boton2").click(function(){
-    $("#boton1").css("opacity",0.8);
+    $("#boton1").css("opacity",0.6);
     $("#boton2").css("opacity",1);
-    $("#boton3").css("opacity",0.8);
-    $("#boton4").css("opacity",0.8);
+    $("#boton3").css("opacity",0.6);
+    $("#boton4").css("opacity",0.6);
     $("#grafico1").css("opacity", 0.8);
     $("#grafico2").css("opacity", 0.8);
     $("#grafico3").css("opacity", 1);
@@ -151,10 +151,10 @@ $("#boton2").click(function(){
     $("#billete2").hide();
 })
 $("#boton3").click(function(){
-    $("#boton1").css("opacity",0.8);
-    $("#boton2").css("opacity",0.8);
+    $("#boton1").css("opacity",0.6);
+    $("#boton2").css("opacity",0.6);
     $("#boton3").css("opacity",1);
-    $("#boton4").css("opacity",0.8);
+    $("#boton4").css("opacity",0.6);
     $("#grafico1").css("opacity", 0.8);
     $("#grafico2").css("opacity", 0.8);
     $("#grafico3").css("opacity", 0.8);
@@ -191,9 +191,9 @@ $("#boton3").click(function(){
     $("#multa3").hide();
 })
 $("#boton4").click(function(){
-    $("#boton1").css("opacity",0.8);
-    $("#boton2").css("opacity",0.8);
-    $("#boton3").css("opacity",0.8);
+    $("#boton1").css("opacity",0.6);
+    $("#boton2").css("opacity",0.6);
+    $("#boton3").css("opacity",0.6);
     $("#boton4").css("opacity",1);
     $("#grafico1").css("opacity", 0.8);
     $("#grafico2").css("opacity", 0.8);

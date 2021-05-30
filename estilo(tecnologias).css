@@ -1,9 +1,10 @@
 @font-face{
-  font-family:letratexto;
-  src: url(Letra1.TTF);
+  font-family:letra;
+  src: url(letras/RutaCL2.ttf);
 }
+
 #cabecera{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: letra;
   font-size: 60px;
   color: white;
   margin:0;
@@ -12,7 +13,7 @@
 }
 
 #cabecera2{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: letra;
   font-size: 40px;
   color:black;
   margin-bottom: 0;
@@ -29,6 +30,10 @@
   position: relative;
   bottom: 80px;
 }
+#instruccion{
+  font-family: letra;
+  font-size: 17px;
+}
 
 #lineas{
   background-color: #323538;
@@ -44,13 +49,9 @@
   margin: 0%;
 }
 
-
-
-
 .div{
   height: 500px;
   margin: 0%;
-  padding: 0;
 }
 #auto{
   margin:auto;

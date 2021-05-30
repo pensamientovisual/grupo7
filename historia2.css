@@ -1,10 +1,9 @@
 @font-face{
     font-family:letra;
-    src: url(letra3.ttf);
-
+    src: url(letras/RutaCL2.ttf);
 }
 #cabecera{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: letra;
     font-size: 60px;
     color: white;
     margin:0;
@@ -13,7 +12,7 @@
 }
 
 #cabecera2{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: letra;
     font-size: 40px;
     color:black;
     margin-bottom: 0;
@@ -44,76 +43,79 @@
 }
 #instruccion{
     padding-bottom: 80px;
+    font-family: letra;
+    font-size: 17px;
 }
 .graficos{
     margin: auto;
     padding-left: 30px;
+    
 
 
 }
 #bandera{
     position: relative;
-    bottom: 325px;
-    right: 650px;
+    bottom: 340px;
+    right: 690px;
   
     transform: rotate(20deg);
 }
 #boton1{
     position: relative;
-    right: 555px;
+    right: 600px;
     bottom: 320px;
     z-index: 100;
 }
 #boton2{
     position: relative;
-    right: 455px;
+    right: 492px;
     bottom: 295px;
     z-index: 100;
 }
 #boton3{
     position: relative;
-    right: 415px;
+    right: 450px;
     bottom: 270px;
     z-index: 100;
 }
 #boton4{
     position: relative;
-    right: 260px;
-    bottom: 230px;
+    right: 280px;
+    bottom: 225px;
     z-index: 100;
 }
 
 #auto1{
     position: relative;
-    right:820px;
+    right:860px;
     bottom: 280px;
     transform: rotate(10deg);
     z-index: 100;
 }
 #auto2{
     position: relative;
-    right:690px;
+    right:730px;
     bottom: 250px;
     z-index: 100;
 }
 #auto3{
     position: relative;
-    right:570px;
+    right:610px;
     bottom: 220px;
     transform: rotate(10deg);
     z-index: 100;
 }
 #auto4{
     position: relative;
-    right: 430;
+    right: 470;
     bottom: 190px;
     transform: rotate(5deg);
     z-index: 100;
 }
 #auto5{
     position: relative;
-    right: 280px;
-    bottom: 150px;
+    right: 305px;
+    bottom: 148px;
     transform: rotate(10deg);
     z-index: 100;
 }
@@ -121,9 +123,8 @@
 #ejeY{
     position: relative;
     font-family: letratexto;
-   
-    right: 620px;
-    bottom: 640px;
+    right: 660px;
+    bottom: 700px;
     transform: rotate(-90deg);
     z-index: 100;
     color: white;
@@ -133,17 +134,19 @@
     position: relative;
     font-family: letratexto;
     font-size: 13px;
-    left: 85px;
+    left: 105px;
     bottom: 50px;
     z-index: 100;
     color: white;
     font-stretch:extra-expanded;
+    width: 100%; 
+   
 }
 #ley2{
     position: relative;
     font-family:letratexto;
     font-size: 13px;
-    left: 250px;
+    left: 270px;
     bottom: 77px;
     z-index: 100;
     color: white;
@@ -152,7 +155,7 @@
     position: relative;
     font-family: letratexto;
     font-size: 13px;
-    left: 325px;
+    left: 345px;
     bottom: 105px;
     z-index: 100;
     color: white;
@@ -162,10 +165,192 @@
     position: relative;
     font-family: letratexto;
     font-size: 13px;
-    left: 530px;
+    left: 570px;
     bottom: 135px;
     z-index: 100;
     color: white;
+}
+
+
+.textostodos{
+    margin-left: 800px;
+    margin-right: 20px;
+}
+
+.tituloley{
+    font-family: letra;
+    font-size: xx-large;
+}
+.subtituloley{
+    font-family: letra;
+    font-size: larger;
+}
+.textoley{
+    font-family: letra;
+    font-size: medium;
+}
+/* LEY TOLERANCIA 0 */
+#ley0{
+    position: absolute;
+    margin-left: 60%;
+    margin-right: 100px;
+    text-align: center;
+    top: 250px;
+    display: inline-block;
+    
+
+}
+#billete{
+    position:relative;
+    right:80px;
+    
+}
+#lice{
+    position: relative;
+    top:80px;
+    right: 175px;
+}
+#carcel{
+    position:relative;
+    top:160px;
+    right: 278px;
+}
+#multa{
+    position:relative;
+    left: 100px;
+    bottom: 60px;
+    margin-right: 20%;
+    font-family: letra;
+}
+#licencia{
+    position:relative;
+    left: 130px;
+    bottom: 30px;
+    margin-right: 20%;
+    font-family: letra;
+
+}
+#prision{
+    position:relative;
+    left: 130px;
+    margin-right: 20%;
+    font-family: letra;
+}
+/* LEY EMILIA */
+#leyemilia{
+    position: absolute;
+    margin-left: 60%;
+    margin-right: 100px;
+    text-align: center;
+    top: 250px;
+    display: inline-block;
+}
+#billete1{
+    position:relative;
+    right:50px;
+    
+}
+#lice1{
+    position: relative;
+    top:80px;
+    right: 145px;
+}
+#carcel1{
+    position:relative;
+    top:160px;
+    right: 248px;
+}
+#multa1{
+    position:relative;
+    left: 130px;
+    bottom: 60px;
+    margin-right: 20%;
+    font-family: letra;
+}
+#licencia1{
+    position:relative;
+    left: 130px;
+    bottom: 30px;
+    margin-right: 20%;
+    font-family: letra;
+
+}
+#prision1{
+    position:relative;
+    left: 130px;
+    margin-right: 20%;
+    font-family: letra;
+}
+/* LEY NO CHAT */
+#leychat{
+    position: absolute;
+    margin-left: 60%;
+    margin-right: 100px;
+    text-align: center;
+    top: 250px;
+    display: inline-block;
+}
+#billete2{
+    position:relative;
+    right:50px;
+}
+#multa2{
+    position:relative;
+    left: 130px;
+    bottom: 60px;
+    margin-right: 20%;
+    font-family: letra;
+}
+/* LEY 50 km/h */
+#ley50{
+    position: absolute;
+    margin-left: 60%;
+    margin-right: 100px;
+    text-align: center;
+    top: 250px;
+    display: inline-block;
+
+}
+#billete3{
+    position:relative;
+    right:50px;
+    
+}
+#multa3{
+    position:relative;
+    left: 130px;
+    bottom: 60px;
+    margin-right: 20%;
+    font-family: letra;
+}
+
+#linea1{
+    position: relative;
+    bottom: 415px;
+    right: 27px;
+    transform: rotate(-90deg);
+    z-index: 0;
+}
+#linea2{
+    position: relative;
+    bottom: 410px;
+    right: 230px;
+    transform: rotate(-90deg);
+    z-index: 0;
+}
+#linea3{
+    position: relative;
+    bottom: 400px;
+    right: 473px;
+    transform: rotate(-90deg);
+    z-index: 0;
+}
+#linea4{
+    position: relative;
+    bottom: 370px;
+    right: 555px;
+    transform: rotate(-90deg);
+    z-index: 0;
 }
 /* 
 
