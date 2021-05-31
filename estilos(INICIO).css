@@ -1,7 +1,6 @@
 @font-face{
     font-family:letra;
     src: url(letras/RutaCL2.ttf);
-
 }
 
 body{
@@ -16,6 +15,7 @@ body{
     position: relative;
     top: 10px;
     z-index: 100;
+    color:white;
 }
 .navegador{
     display: block;

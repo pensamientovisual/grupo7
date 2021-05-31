@@ -62,7 +62,7 @@
 }
 #boton1{
     position: relative;
-    right: 600px;
+    right: 602px;
     bottom: 320px;
     z-index: 100;
 }
@@ -74,13 +74,13 @@
 }
 #boton3{
     position: relative;
-    right: 450px;
+    right: 448px;
     bottom: 270px;
     z-index: 100;
 }
 #boton4{
     position: relative;
-    right: 280px;
+    right: 278px;
     bottom: 225px;
     z-index: 100;
 }
@@ -122,20 +122,20 @@
 
 #ejeY{
     position: relative;
-    font-family: letratexto;
+    font-family: letra;
     right: 660px;
     bottom: 700px;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg);   
     z-index: 100;
     color: white;
 }
 
 #ley1{
     position: relative;
-    font-family: letratexto;
+    font-family: letra;
     font-size: 13px;
     left: 105px;
-    bottom: 50px;
+    bottom: 40px;
     z-index: 100;
     color: white;
     font-stretch:extra-expanded;
@@ -144,29 +144,29 @@
 }
 #ley2{
     position: relative;
-    font-family:letratexto;
+    font-family:letra;
     font-size: 13px;
     left: 270px;
-    bottom: 77px;
+    bottom: 67px;
     z-index: 100;
     color: white;
 }
 #ley3{
     position: relative;
-    font-family: letratexto;
+    font-family: letra;
     font-size: 13px;
     left: 345px;
-    bottom: 105px;
+    bottom: 95px;
     z-index: 100;
     color: white;
 }
 
 #ley4{
     position: relative;
-    font-family: letratexto;
+    font-family: letra;
     font-size: 13px;
     left: 570px;
-    bottom: 135px;
+    bottom: 125px;
     z-index: 100;
     color: white;
 }
@@ -180,14 +180,20 @@
 .tituloley{
     font-family: letra;
     font-size: xx-large;
+    color: white;
+    
 }
 .subtituloley{
     font-family: letra;
     font-size: larger;
+    color: white;
+
 }
 .textoley{
     font-family: letra;
     font-size: medium;
+    color: white;
+
 }
 /* LEY TOLERANCIA 0 */
 #ley0{
@@ -217,24 +223,28 @@
 }
 #multa{
     position:relative;
-    left: 100px;
+    left: 90px;
     bottom: 60px;
     margin-right: 20%;
     font-family: letra;
+    color: white;
+
 }
 #licencia{
     position:relative;
-    left: 130px;
+    left: 90px;
     bottom: 30px;
     margin-right: 20%;
     font-family: letra;
-
+    color: white;
 }
 #prision{
     position:relative;
-    left: 130px;
+    left: 90px;
     margin-right: 20%;
     font-family: letra;
+    color: white;
+
 }
 /* LEY EMILIA */
 #leyemilia{
@@ -247,39 +257,44 @@
 }
 #billete1{
     position:relative;
-    right:50px;
+    right:80px;
     
 }
 #lice1{
     position: relative;
     top:80px;
-    right: 145px;
+    right: 175px;
 }
 #carcel1{
     position:relative;
     top:160px;
-    right: 248px;
+    right: 278px;
 }
 #multa1{
     position:relative;
-    left: 130px;
+    left: 50px;
     bottom: 60px;
     margin-right: 20%;
     font-family: letra;
+    color: white;
 }
+
 #licencia1{
     position:relative;
-    left: 130px;
+    left: 80px;
     bottom: 30px;
     margin-right: 20%;
     font-family: letra;
+    color: white;
 
 }
 #prision1{
     position:relative;
-    left: 130px;
+    left: 90px;
     margin-right: 20%;
     font-family: letra;
+    color: white;
+
 }
 /* LEY NO CHAT */
 #leychat{
@@ -292,14 +307,15 @@
 }
 #billete2{
     position:relative;
-    right:50px;
-}
+    right:120px;}
 #multa2{
     position:relative;
-    left: 130px;
-    bottom: 60px;
+    left: 86px;
+    bottom: 50px;
     margin-right: 20%;
     font-family: letra;
+    color: white;
+
 }
 /* LEY 50 km/h */
 #ley50{
@@ -313,41 +329,42 @@
 }
 #billete3{
     position:relative;
-    right:50px;
-    
+    right:120px;
 }
 #multa3{
     position:relative;
-    left: 130px;
-    bottom: 60px;
+    left: 80px;
+    bottom: 50px;
     margin-right: 20%;
     font-family: letra;
+    color: white;
+
 }
 
 #linea1{
     position: relative;
-    bottom: 415px;
+    bottom: 420px;
     right: 27px;
     transform: rotate(-90deg);
     z-index: 0;
 }
 #linea2{
     position: relative;
-    bottom: 410px;
+    bottom: 406px;
     right: 230px;
     transform: rotate(-90deg);
     z-index: 0;
 }
 #linea3{
     position: relative;
-    bottom: 400px;
+    bottom: 392px;
     right: 473px;
     transform: rotate(-90deg);
     z-index: 0;
 }
 #linea4{
     position: relative;
-    bottom: 370px;
+    bottom: 375px;
     right: 555px;
     transform: rotate(-90deg);
     z-index: 0;

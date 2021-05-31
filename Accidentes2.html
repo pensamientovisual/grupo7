@@ -1,9 +1,11 @@
 <html>               
     <head style="background-color: 565656;">
         <title>SEGURIDAD VIAL: Accidentes</title>
+        <meta charset="UTF-8">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <link href="estilo(accidentes2).css" rel="stylesheet" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="text/javascript" src="script(Accidentes).js"></script> 
+        <script type="text/javascript" src="scriptaccidentes2.js"></script> 
     </head>
 
     <body style="background-color: 565656;"> 
@@ -21,40 +23,207 @@
         </div>
         
         </header>
+
         <h2 id='cabecera2'>Accidentes</h2>
-        <p id='instruccion'>INSTRUCCIONES: Presiona en los botones alrededor del auto para conocer sobre las distintas causas de accidentes automovilisticos en chile, en el ultimo año. </p>
+        <p id='instruccion'>Presiona en los botones alrededor del auto para conocer sobre las distintas causas de accidentes automovilisticos en chile, en el ultimo año. </p>
 
-        <div class='fotos_lesiones'>
-            <!-- <img id='fa1' src="Fotos_autos/Auto1.png" height="400"/> -->
-            <a href="#" class="fotos"><img id='causa1'src="Fotos_causas/fallecidos.png" height="80"/></a> 
-            <a href="#" class="fotos"><img id='causa2'src="Fotos_causas/gravemente.png" height="80"/></a> 
-            <a href="#" class="fotos"><img id='causa3'src="Fotos_causas/lesionados.png" height="80"/></a> 
-            <a href="#" class="fotos"><img id='causa4'src="Fotos_causas/levemente.png" height="80"/></a> 
-            <!-- <a href="#" id="boton5"><img id='causa5'src="Fotos_causas/causa5.png" height="400"/></a> 
-            <a href="#" id="boton6"><img id='causa6'src="Fotos_causas/causa6.png" height="400"/></a> 
-            <a href="#" id="boton7"><img id='causa7'src="Fotos_causas/causa7.png" height="400"/></a>  -->
-           
+        <div id='principal'>
+            <div class='fotos_lesiones'>
+                <a href="#" class="fotos"><img id='causa1'src="Fotos_causas/fallecidos.png" height="80"/></a> 
+                <a href="#" class="fotos"><img id='causa2'src="Fotos_causas/gravemente.png" height="80"/></a> 
+                <a href="#" class="fotos"><img id='causa3'src="Fotos_causas/lesionados.png" height="80"/></a> 
+                <a href="#" class="fotos"><img id='causa4'src="Fotos_causas/levemente.png" height="80"/></a> 
+                
+            </div>
+                <div id="g1">
+                    <canvas id="grafica1" width="200px" height="200px"></canvas>
+                </div>
+                <div id="g2">
+                    <canvas id="grafica2" width="200px" height="200px"></canvas>
+                </div>
+                <div id="g3">
+                    <canvas id="grafica3" width="200px" height="200px"></canvas>
+                </div>
+                <div id="g4">
+                    <canvas id="grafica4" width="200px" height="200px"></canvas>
+                </div>
+                <div id="g5">
+                    <canvas id="grafica5" width="200px" height="200px"></canvas>
+                </div>
         </div>
-        
-<!--
-         <div class='textos_causas'>
-            <img id='g1' src="Velocimetro/Fallas_mecanicas_M.png" height="400" />
-            <img id='g2' src="Velocimetro/Imprudencia_Conductor_M.png" height="400" />
-            <img id='g3' src="Velocimetro/Velocidad_M.png" height="400" />
-            <img id='g4' src="Velocimetro/Alcohol_M1.png" height="400" />
-            <img id='g5' src="Velocimetro/Imprudencia_Peaton_M.png" height="400" />
-            <img id='g6' src="Velocimetro/Perdida_De_Control_M.png" height="400" />
-            </div> -->
+<!-- Los gráficos programados a continuación se utilizó la librearia de chart.js (https://www.chartjs.org/docs/3.0.2/charts/doughnut.html.) 
+También se utilizó ayuda de (https://parzibyte.me/blog/2021/01/03/chart-js-tutorial-ejemplos-graficas-web/) que explicaba como hacer funcionar los comandos necesarios.-->
+        <script>
+            const $grafica1 = document.querySelector("#grafica1");
+            const etiquetas1 = ["Alcohol (en el conductor, pasajero o peatón)", "Desobediencia a señaléticas", "Fallas mecánicas", "Imprudencia del conductor","Imprudencia del peatón","Velocidad imprudente","Perdida de control del vehículo"]
+            const datosIngresos1 = {
+                data: [7431,8269,1228,45731,2218,1132,6469], 
+                backgroundColor: ["#8894a4","#ce5e52","#4f2c33","#93443d","#495760","#c9767c","#e4cec1"],
+                borderColor: ["white"],
+                borderWidth: 1,
+            };
+            new Chart($grafica1, {
+                type: 'pie',
+                data: {
+                    labels: etiquetas1,
+                    datasets: [
+                        datosIngresos1,
+                    ]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: "Accidentes automovilísticos en el 2019",
+                            color: 'white',
+                        },
+                    legend: {
+                        position: "right",
+                        labels: {
+                                color: 'rgb(255, 255, 255)',
+                            }
+                    },
+                    }
+                }
 
-                <!-- <div class="botones6">
-                    <a href="#" id="botonf6"><img src="Velocimetro/Boton_fallecidos.png" height="120"/></a>
-                    <a href="#" id="botonLG6"><img src="Velocimetro/Boton_LG.png" height="120"/></a>
-                    <a href="#" id="botonLM6"><img src="Velocimetro/Boton_LM.png" height="120"/></a>
-                    <a href="#" id="botonLL6"><img src="Velocimetro/Boton_LL.png" height="120"/></a>
-                    <a href="#" id="botonLT6"><img src="Velocimetro/Boton_LT.png" height="120"/></a>
-                </div> -->
-      <div id='fondo'>
-         
-      </div>
+            });
+        </script>
+        <script>
+            const $grafica2 = document.querySelector("#grafica2");
+            const etiquetas2 = ["Alcohol (en el conductor, pasajero o peatón)", "Desobediencia a señaléticas", "Fallas mecánicas", "Imprudencia del conductor","Imprudencia del peatón","Velocidad imprudente","Perdida de control del vehículo"]
+            const datosIngresos2 = {
+                data: [172,64,18,415,380,274,244],
+                backgroundColor: ["#8894a4","#ce5e52","#4f2c33","#93443d","#495760","#c9767c","#e4cec1"],
+                borderColor: ["white"],
+                borderWidth: 1,
+            };
+            new Chart($grafica2, {
+                type: 'pie',
+                data: {
+                    labels: etiquetas2,
+                    datasets: [
+                        datosIngresos2,
+                    ]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: "Fallecidos por accidentes automovilísticos el 2019",
+                            color: 'white',
+                        },
+                    legend: {
+                        position: "right",
+                        labels: {
+                                color: 'rgb(255, 255, 255)',
+                            }
+                    },
+                    }
+                }
+            });
+        </script>
+        <script>
+            const $grafica3 = document.querySelector("#grafica3");
+            const etiquetas3 = ["Alcohol (en el conductor, pasajero o peatón)", "Desobediencia a señaléticas", "Fallas mecánicas", "Imprudencia del conductor","Imprudencia del peatón","Velocidad imprudente","Perdida de control del vehículo"]
+            const datosIngresos3 = {
+                data: [865,616,119,2940,537,251,1046],
+                backgroundColor: ["#8894a4","#ce5e52","#4f2c33","#93443d","#495760","#c9767c","#e4cec1"],
+                borderColor: ["white"],
+                borderWidth: 1,
+            };
+            new Chart($grafica3, {
+                type: 'pie',
+                data: {
+                    labels: etiquetas3,
+                    datasets: [
+                        datosIngresos3,
+                    ]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: "Gravemente lesionados por accidentes automovilísticos el 2019",
+                            color: 'white',
+                        },
+                    legend: {
+                        position: "right",
+                        labels: {
+                                color: 'rgb(255, 255, 255)',
+                            }
+                    },
+                    }
+                }
+
+            });
+        </script>
+        <script>
+            const $grafica4 = document.querySelector("#grafica4");
+            const etiquetas4 = ["Alcohol (en el conductor, pasajero o peatón)", "Desobediencia a señaléticas", "Fallas mecánicas", "Imprudencia del conductor","Imprudencia del peatón","Velocidad imprudente","Perdida de control del vehículo"]
+            const datosIngresos4 = {
+                data: [580,341,83,1539,1191,138,513], 
+                backgroundColor: ["#8894a4","#ce5e52","#4f2c33","#93443d","#495760","#c9767c","#e4cec1"],
+                borderColor: ["white"],
+                borderWidth: 1,
+            };
+            new Chart($grafica4, {
+                type: 'pie',
+                data: {
+                    labels: etiquetas4,
+                    datasets: [
+                        datosIngresos4,
+                    ]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: "Moderadamente lesionados por accidentes automovilísticos el 2019",
+                            color: 'white',
+                        },
+                    legend: {
+                        position: "right",
+                        labels: {
+                                color: 'rgb(255, 255, 255)',
+                            }
+                    },
+                    }
+                }
+            });
+        </script>
+        <script>
+            const $grafica5 = document.querySelector("#grafica5");
+            const etiquetas5 = ["Alcohol (en el conductor, pasajero o peatón)", "Desobediencia a señaléticas", "Fallas mecánicas", "Imprudencia del conductor","Imprudencia del peatón","Velocidad imprudente","Perdida de control del vehículo"]
+            const datosIngresos5 = {
+                data: [4991,5663,1136,19778,219,1011,4917],
+                backgroundColor: ["#8894a4","#ce5e52","#4f2c33","#93443d","#495760","#c9767c","#e4cec1"],
+                borderColor: ["white"],
+                borderWidth: 1,
+            };
+            new Chart($grafica5, {
+                type: 'pie',
+                data: {
+                    labels: etiquetas5,
+                    datasets: [
+                        datosIngresos5,
+                    ]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: "Levemente lesionados por accidentes automovilísticos el 2019",
+                            color: 'white',
+                        },
+                    legend: {
+                        position: "right",
+                        labels: {
+                                color: 'rgb(255, 255, 255)',
+                            }
+                    },
+                    }
+                }
+            });
+        </script>
     </body>
 </hmtl>
