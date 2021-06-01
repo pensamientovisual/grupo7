@@ -92,114 +92,40 @@
   width: 55px;
 }
 .txcinad{
-  display: block;
   position: relative;
-  bottom: 500px;
-  left: 400px;
-
+  text-align: left;
+  bottom: 200px;
+  padding-right: 60%; 
+  color: white;
+  padding-left: 40px;
 }
 .txcinat{
-  display: block;
   position: relative;
-  bottom: 500px;
-  left: 400px;  
+  text-align: left;
+  bottom: 200px;
+  padding-right: 60%; 
+  color: white;
+  padding-left: 40px;
 }
 .txsilla{  
-  display: block;
   position: relative;
-  bottom: 500px;
-  left: 400px;
+  text-align: left;
+  bottom: 200px;
+  padding-right: 60%; 
+  color: white;
+  padding-left: 40px;
 }
 .txairbag{  
-  display: block;
   position: relative;
-  bottom: 500px;
-  left: 400px;
-}
-.tit{
-font-family:letratexto;
-text-align: center;
-font-size: 30px;
-position: relative;
-left: -50px;
-color: white;
-}
-.des{
-  font-family:letratexto;
-  font-size: 17px;
-  position: relative;
-  left: 400px;
-  text-align: center; 
-  width: 450px;
-  height: 450px;
-  color: white; 
-}
-.ic{
-  display: inline-block;
-  position: relative;
-  left: 475px;
-  bottom: 310px;
-}
-.multa{
-  font-family:letratexto;
-  font-size: 17px;
+  text-align: left;
+  bottom: 200px;
+  padding-right: 60%; 
   color: white;
-  display: block;
-  position: relative;
-  left: 615px;
-  bottom: 380px;
+  padding-left: 40px;
+}
 
-}
-.des1{
-  font-family:letratexto;
-  font-size: 17px;
-  position: relative;
-  left: 420px;
-  bottom: 280px;
-  text-align: center; 
-  width: 400px;
-  height: 400px;
-  color: white; 
-}
-.ic2{
-  display: inline-block;
-  position: relative;
-  left: 455px;
-  bottom: 360px;
-}
-.des2{
-  font-family:letratexto;
-  font-size: 17px;
-  position: relative;
-  left: 380px;
-  text-align: center; 
-  width: 400px;
-  height: 400px;
-  color: white;
-  bottom: 350px;
-}
-.multa2{
-  font-family:letratexto;
-  font-size: 17px;
-  color: white;
-  display: block;
-  position: relative;
-  left: 580px;
-  bottom: 420px;
-}
-.semicirculo {
-  width: 300px; 
-  height: 150px; 
-  border: 5px solid white; 
-  background: transparent;
-  -moz-border-radius: 300px 300px 0 0;
-  -webkit-border-radius: 300px 300px 0 0;
-  border-radius: 300px 300px 0 0;
-  display: block;
-  position: relative;
-  left:480px;
-  bottom: 1100px;
-}
+
+
 .botones{
   position: relative;
   bottom: 1100px;
@@ -208,113 +134,17 @@ color: white;
   position: relative;
   bottom: 1100px;
 }
-.triangulo{
-  width: 0;
-  height: 0;
-  border-right: 10px solid transparent;
-  border-top: 10px solid transparent;
-  border-left: 10px solid transparent;
-  border-bottom: 100px solid red;
-  display: block;
-  position: relative;
-  left:140px;
-  top:40px;
-  transform-origin:bottom;
+#gr1{
+  width:600px;
 }
-.vel1{
-  display: block;
-  position: relative;
-  width:320px;
-  bottom:120px;
-  right:13px;
+#gr2{
+  width:600px;
 }
-.vel2{
-  display: block;
-  position: relative;
-  width:320px;
-  bottom:114px;
-  right:10px;
+#gr3{
+  width:600px;
 }
-.vel3{
-  display: block;
-  position: relative;
-  width:313px;
-  bottom:120px;
-  right:6px;
+#gr4{
+  width:600px;
+}
 
-}
-.vel4{
-  display: block;
-  position: relative;
-  width:315px;
-  bottom:117px;
-  right:7px;
 
-}
-#cad1{
-  display: block;
-  position: relative;
-  top:75px;
-  left:375px;
-  background-color: transparent;
-  color: white;
-}
-#cat1{
-  display: block;
-  position: relative;
-  top:85px;
-  left:375px;
-  background-color: transparent;
-  color:white;
-}
-#s1{
-  display: block;
-  position: relative;
-  top:90px;
-  left:375px;
-  background-color: transparent;
-  color:white;
-}
-#a1{
-  display: block;
-  position: relative;
-  top:75px;
-  left:375px;
-  background-color: transparent;
-  color:white;
-}
-#cad2{
-  display: block;
-  position: relative;
-  bottom: 109px;
-  left:810px;
-  background-color: transparent;
-  color:white;
-
-  
-}
-#cat2{
-  display: block;
-  position: relative;
-  bottom: 100px;
-  left:810px;
-  background-color: transparent;
-  color:white;
-}
-#s2{
-  display: block;
-  position: relative;
-  left:810px;
-  bottom: 95px;
-  background-color: transparent;
-  color:white;
-  
-}
-#a2{
-  display: block;
-  position: relative;
-  left:810px;
-  bottom:110px;
-  background-color: transparent;
-  color:white;
-}

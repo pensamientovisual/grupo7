@@ -1,6 +1,8 @@
 <hmtl>
     <head style="background-color: 565656;"> 
         <title>SEGURIDAD VIAL: Avances Tecnologicos</title>
+        <meta charset="UTF-8">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <link href="estilo(tecnologias).css" rel="stylesheet" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="tecnologias.js"></script>
@@ -40,21 +42,20 @@
                 <p class="des">Desde 1985, es obligación que las personas en los asientos delanteros utilicen el cinturon de seguridad.</p>
                 <img class="ic" src="billete.png" width="110px"/>
                 <p class="multa">Multa de 1,5 UTM</p>
-                <p class="des1">Fallecidos totales</p>
             </div>
             <div class=txcinat>
                 <h1 class="tit">Cinturones asientos traseros</h1>
                 <p class="des">Desde el 2002, es obligación que las personas en los asientos traseros usen el cinturon de seguridad. Además que todos los autos fabricados posteriormente al 2002 deben tener implementados los cinturones de seguridad en los asientos trasero.</p>
                 <img class="ic" src="billete.png" width="110px"/>
                 <p class="multa">Multa de 1,5 UTM</p>
-                <p class="des1">Fallecidos totales</p>
+      
             </div>
             <div class=txsilla>
-                <h1 class="tit">Silla de retención (Silla de guagua)</h1>
+                <h1 class="tit">Silla de retención (Silla de bebés)</h1>
                 <p class="des">En el año 2016, se cambia la edad de niños y niñas que deben utilizar la silla de retención, de menores de 4 años a menores de 8 años (8 inclusive). Además, aumenta la sanción por no llevar a niños de la edad indicada sin silla de retención.</p>
                 <img class="ic" src="billete.png" width="110px"/>
                 <p class="multa">Multa de 1,5 a 3 UTM</p>
-                <p class="des1">Niños fallecidos entre 4 y 8 años</p>
+         
     
             </div> 
             <div class=txairbag>
@@ -62,27 +63,234 @@
                 <p class="des">El airbag es obligatorio para ambos asientos delanteros.</p>
                 <img class="ic2" src="billete.png" width="110px"/>
                 <p class="multa2">No existe multa para conductores</p>
-                <p class="des2">Conductores fallecidos</p>
+        
             </div>
-            <div class="botones">
-                <button id="cad1">1981 a 1984</button>
-                <button id="cat1">1998 a 2001</button>
-                <button id="s1">2013 a 2015</button>
-                <button id="a1">2015 a 2016</button>
+            <div id="gr1">
+                <canvas id="myChart" width="400" height="400"></canvas>
             </div>
-            <div class="semicirculo">
-                <div class="triangulo"></div>
-                <img class="vel1" src="Vel1.png">
-                <img class="vel2" src="vel2.png">
-                <img class="vel3" src="vel3.png">
-                <img class="vel4" src="vel4.png">
+            <div id="gr2">
+                <canvas id="myChart2" width="400" height="400"></canvas>
             </div>
-            <div class="botones1">
-                <button id="cad2">1986 a 1989</button>
-                <button id="cat2">2003 a 2006</button>
-                <button id="s2">2017 a 2019</button>
-                <button id="a2">2018 a 2019</button>
-            </div> 
+            <div id="gr3">
+                <canvas id="myChart3" width="400" height="400"></canvas>
+            </div>
+            <div id="gr4">
+                <canvas id="myChart4" width="400" height="400"></canvas>
+            </div>
+<!-- Los gráficos programados a continuación se utilizó la librearia de chart.js (https://www.chartjs.org/docs/3.0.2/charts/doughnut.html.) 
+También se utilizó ayuda de (https://parzibyte.me/blog/2021/01/03/chart-js-tutorial-ejemplos-graficas-web/) que explicaba como hacer funcionar los comandos necesarios.-->
+            <script>
+                var ctx=document.getElementById("myChart").getContext("2d");
+                const etiquetas1 = [ "1981 a 1984", "1986 a 1988"]
+                const colores1 = ["	#4a4a4a", "red","#4a4a4a"]
+                const datosMuertos1 = {
+                    label: "Fallecidos en los 4 años",
+                    data: [ 5399,5102], 
+                    backgroundColor: "#495760", 
+                    borderColor: "white", 
+                    borderWidth: 1,
+                };
+                new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: etiquetas1,
+                    datasets: [
+                        datosMuertos1,
+                    ],
+                },
+                options: {
+                    scales: {
+                        x: {
+                            grid: {
+                                color: colores1,
+                                borderColor: 'white',             
+                            },
+                            ticks: {
+                                color: 'white',
+                            },  
+                        },
+                        y:{
+                            ticks: {
+                                color: 'white',
+                            },
+                            grid: {
+                                borderColor: 'white'
+                            },
+                        }
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: ["Fallecidos por accidentes automovilísticos"],
+                            color: "white",
+                        },
+    
+                        legend: {
+                            display: false,
+                        },
+                    },
+                }
+                });
+            </script>
+            <script>
+                var cty=document.getElementById("myChart2").getContext("2d");
+                const etiquetas2 = [ "1998 a 2001", "2003 a 2006"]
+                const colores2 = ["	#4a4a4a", "red","#4a4a4a"]
+                const datosMuertos2 = {
+                    label: "Fallecidos en los 4 años",
+                    data: [ 6874,6738], 
+                    backgroundColor: "#495760", 
+                    borderColor: "white", 
+                    borderWidth: 1,
+                };
+                new Chart(cty, {
+                type: 'bar',
+                data: {
+                    labels: etiquetas2,
+                    datasets: [
+                        datosMuertos2,
+                    ],
+                },
+                options: {
+                    scales: {
+                        x: {
+                            grid: {
+                                color: colores2,
+                                borderColor: 'white',             
+                            },
+                            ticks: {
+                                color: 'white',
+                            }                    
+                        },
+                        y:{
+                            ticks: {
+                                color: 'white',
+                            },
+                            grid: {
+                                borderColor: 'white'
+                            },
+                        }
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: ["Fallecidos por accidentes automovilísticos"],
+                            color: "white",
+                        },
+    
+                        legend: {
+                            display: false,
+                        }
+                    }
+                }
+                });
+            </script>
+            <script>
+                var ctz=document.getElementById("myChart3").getContext("2d");
+                const etiquetas3 = [ "2013 a 2015", "2017 a 2019"]
+                const colores3 = ["	#4a4a4a", "red","#4a4a4a"]
+                const datosMuertos3 = {
+                    label: "Fallecidos en los 3 años",
+                    data: [ 40,26],
+                    backgroundColor: "#495760",
+                    borderColor: "white",
+                    borderWidth: 1,
+                };
+                new Chart(ctz, {
+                type: 'bar',
+                data: {
+                    labels: etiquetas3,
+                    datasets: [
+                        datosMuertos3,
+                    ],
+                },
+                options: {
+                    scales: {
+                        x: {
+                            grid: {
+                                color: colores3,
+                                borderColor: 'white',             
+                            },
+                            ticks: {
+                                color: 'white',
+                            }                    
+                        },
+                        y:{
+                            ticks: {
+                                color: 'white',
+                            },
+                            grid: {
+                                borderColor: 'white'
+                            },
+                        }
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: ["Fallecidos entre 4 y 8 años por accidentes automovilísticos"],
+                            color: "white",
+                        },
+    
+                        legend: {
+                            display: false,
+                        }
+                    }
+                }
+                });
+            </script>
+            <script>
+                var ctw=document.getElementById("myChart4").getContext("2d");
+                const etiquetas4 = [ "2015 a 2016", "2018 a 2019"]
+                const colores4 = ["	#4a4a4a", "red","#4a4a4a"]
+                const datosMuertos4 = {
+                    label: "Fallecidos en los 2 años",
+                    data: [ 1406,1348],
+                    backgroundColor: "#495760",
+                    borderColor: "white",
+                    borderWidth: 1,
+                };
+                new Chart(ctw, {
+                type: 'bar',
+                data: {
+                    labels: etiquetas4,
+                    datasets: [
+                        datosMuertos4,
+                    ],
+                },
+                options: {
+                    scales: {
+                        x: {
+                            grid: {
+                                color: colores4,
+                                borderColor: 'white',             
+                            },
+                            ticks: {
+                                color: 'white',
+                            }                    
+                        },
+                        y:{
+                            ticks: {
+                                color: 'white',
+                            },
+                            grid: {
+                                borderColor: 'white'
+                            },
+                        }
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: ["Conductores fallecidos por accidentes automovilísticos"],
+                            color: "white",
+                        },
+    
+                        legend: {
+                            display: false,
+                        }
+                    }
+                }
+                });
+            </script>
     </body>
 
 </hmtl>

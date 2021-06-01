@@ -61,5 +61,119 @@
     font-size: 20px;
 }
 
+#g1{
+    width: 700px;
+    position: relative;
+    left: 500px;
+    bottom: 850px;
 
+   
+}
+#g2{
+    width: 700px;
+    position: relative;
+    left: 500px;
+    bottom: 850px;
+}
+#g3{
+    width: 700px;
+    position: relative;
+    left: 500px;
+    bottom: 850px;
+}
+#g4{
+    width: 700px;
+    position: relative;
+    left: 500px;
+    bottom: 850px;
+}
+#g5{
+    width: 700px;
+    position: relative;
+    left: 500px;
+    bottom: 850px;
+}
+.fotos{
+    padding: 15px;
+}
 
+#t1{
+    font-family: letra;
+    font-size: 17px;
+    position: relative;
+    bottom: 520px;
+    left: 150px;
+}
+#t2{
+    font-family: letra;
+    font-size: 17px;
+    position: relative;
+    bottom: 448px;
+    left: 150px;
+}
+
+#t3{
+    font-family: letra;
+    font-size: 17px;
+    position: relative;
+    bottom: 370px;
+    left: 150px;
+}
+
+#t4{
+    font-family: letra;
+    font-size: 17px;
+    position: relative;
+    bottom: 298px;
+    left: 150px;
+}
+
+#t5{
+    font-family: letra;
+    font-size: 17px;
+    position: relative;
+    bottom:220px;
+    left: 150px;
+}
+
+#tg1{
+    position: relative;
+    font-family: letra;
+    font-size: 15px;
+    color: white;
+    bottom: 720px;
+    left: 560px;
+}
+
+#tg2{
+    position: relative;
+    font-family: letra;
+    font-size: 15px;
+    color: white;
+    bottom: 720px;
+    left: 510px;
+}
+#tg3{
+    position: relative;
+    font-family: letra;
+    font-size: 15px;
+    color: white;
+    bottom: 720px;
+    left: 480px;
+}
+#tg4{
+    position: relative;
+    font-family: letra;
+    font-size: 15px;
+    color: white;
+    bottom: 720px;
+    left: 460px;
+}
+#tg5{
+    position: relative;
+    font-family: letra;
+    font-size: 15px;
+    color: white;
+    bottom: 720px;
+    left: 480px;
+}

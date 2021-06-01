@@ -25,15 +25,30 @@
         </header>
 
         <h2 id='cabecera2'>Accidentes</h2>
-        <p id='instruccion'>Presiona en los botones alrededor del auto para conocer sobre las distintas causas de accidentes automovilisticos en chile, en el ultimo año. </p>
+        <p id='instruccion'>Presiona los botones de la izquierda para desplegar los gráficos con las causas de los sucesos ocurridos en el año 2019. Además puedes comparar las distintas causas en cada gráfico. </p>
 
         <div id='principal'>
             <div class='fotos_lesiones'>
+                <a href="#" class="fotos"><img id='causa'src="Fotos_causas/accidentes.png" height="80"/></a> 
                 <a href="#" class="fotos"><img id='causa1'src="Fotos_causas/fallecidos.png" height="80"/></a> 
                 <a href="#" class="fotos"><img id='causa2'src="Fotos_causas/gravemente.png" height="80"/></a> 
                 <a href="#" class="fotos"><img id='causa3'src="Fotos_causas/lesionados.png" height="80"/></a> 
                 <a href="#" class="fotos"><img id='causa4'src="Fotos_causas/levemente.png" height="80"/></a> 
                 
+                
+            </div>
+            <div class='textosiconos'>
+                <p id='t1'>Total accidentes</p>
+                <p id='t2'>Fallecidos</p>
+                <p id='t3'>Gravemente lesionados</p>
+                <p id='t4'>Medianamente lesionados</p>
+                <p id='t5'>Levemente Lesionados</p>
+                <p id='tg1'>Accidentes automovilísticos en el 2019</p>
+                <p id='tg2'>Fallecidos por accidentes automovilísticos el 2019</p>
+                <p id='tg3'>Gravemente lesionados por accidentes automovilísticos el 2019</p>
+                <p id='tg4'>Moderadamente lesionados por accidentes automovilísticos el 2019</p>
+                <p id='tg5'>Levemente lesionados por accidentes automovilísticos el 2019</p>
+
             </div>
                 <div id="g1">
                     <canvas id="grafica1" width="200px" height="200px"></canvas>
@@ -73,7 +88,7 @@ También se utilizó ayuda de (https://parzibyte.me/blog/2021/01/03/chart-js-tut
                 options: {
                     plugins: {
                         title: {
-                            display: true,
+                            display: false,
                             text: "Accidentes automovilísticos en el 2019",
                             color: 'white',
                         },
@@ -108,7 +123,7 @@ También se utilizó ayuda de (https://parzibyte.me/blog/2021/01/03/chart-js-tut
                 options: {
                     plugins: {
                         title: {
-                            display: true,
+                            display: false,
                             text: "Fallecidos por accidentes automovilísticos el 2019",
                             color: 'white',
                         },
@@ -142,7 +157,7 @@ También se utilizó ayuda de (https://parzibyte.me/blog/2021/01/03/chart-js-tut
                 options: {
                     plugins: {
                         title: {
-                            display: true,
+                            display: false,
                             text: "Gravemente lesionados por accidentes automovilísticos el 2019",
                             color: 'white',
                         },
@@ -177,7 +192,7 @@ También se utilizó ayuda de (https://parzibyte.me/blog/2021/01/03/chart-js-tut
                 options: {
                     plugins: {
                         title: {
-                            display: true,
+                            display: false,
                             text: "Moderadamente lesionados por accidentes automovilísticos el 2019",
                             color: 'white',
                         },
@@ -211,7 +226,7 @@ También se utilizó ayuda de (https://parzibyte.me/blog/2021/01/03/chart-js-tut
                 options: {
                     plugins: {
                         title: {
-                            display: true,
+                            display: false,
                             text: "Levemente lesionados por accidentes automovilísticos el 2019",
                             color: 'white',
                         },
@@ -225,5 +240,9 @@ También se utilizó ayuda de (https://parzibyte.me/blog/2021/01/03/chart-js-tut
                 }
             });
         </script>
+
+        <div id='fondo'>
+              
+        </div>
     </body>
 </hmtl>

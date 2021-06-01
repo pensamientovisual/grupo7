@@ -369,6 +369,52 @@
     transform: rotate(-90deg);
     z-index: 0;
 }
+
+#textoporcentaje{
+    position: relative;
+    top: 60px;
+    right: 100px;
+}
+#porcentaje{
+    position: relative;
+    left:150px;
+}
+#textoporcentaje2{
+    position: relative;
+    top: 60px;
+    right: 100px;
+}
+#porcentaje2{
+    position: relative;
+    left:150px;
+}
+#textoporcentaje3{
+    position: relative;
+    top: 40px;
+    right: 80px;
+    margin-right: 100px;
+}
+#porcentaje3{
+    position: relative;
+    left:150px;
+    bottom: 50px;
+}
+#textoporcentaje4{
+    position: relative;
+    top: 35px;
+    right: 50px;
+    margin-right: 150px;
+}
+#porcentaje4{
+    position: relative;
+    left:150px;
+    bottom: 50px;
+}
+
+
+
+
+
 /* 
 
 }
