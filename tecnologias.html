@@ -60,238 +60,253 @@
             </div> 
             <div class=txairbag>
                 <h1 class="tit">Airbag asientos delanteros</h1>
-                <p class="des">El airbag es obligatorio para ambos asientos delanteros.</p>
+                <p class="des">Desde el año 2017, el airbag es obligatorio para ambos asientos delanteros.</p>
                 <img class="ic2" src="billete.png" width="110px"/>
                 <p class="multa2">No existe multa para conductores</p>
         
             </div>
-            <div id="gr1">
-                <canvas id="myChart" width="400" height="400"></canvas>
-            </div>
-            <div id="gr2">
-                <canvas id="myChart2" width="400" height="400"></canvas>
-            </div>
-            <div id="gr3">
-                <canvas id="myChart3" width="400" height="400"></canvas>
-            </div>
-            <div id="gr4">
-                <canvas id="myChart4" width="400" height="400"></canvas>
-            </div>
-<!-- Los gráficos programados a continuación se utilizó la librearia de chart.js (https://www.chartjs.org/docs/3.0.2/charts/doughnut.html.) 
-También se utilizó ayuda de (https://parzibyte.me/blog/2021/01/03/chart-js-tutorial-ejemplos-graficas-web/) que explicaba como hacer funcionar los comandos necesarios.-->
-            <script>
-                var ctx=document.getElementById("myChart").getContext("2d");
-                const etiquetas1 = [ "1981 a 1984", "1986 a 1988"]
-                const colores1 = ["	#4a4a4a", "red","#4a4a4a"]
-                const datosMuertos1 = {
-                    label: "Fallecidos en los 4 años",
-                    data: [ 5399,5102], 
-                    backgroundColor: "#495760", 
-                    borderColor: "white", 
-                    borderWidth: 1,
-                };
-                new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: etiquetas1,
-                    datasets: [
-                        datosMuertos1,
-                    ],
-                },
-                options: {
-                    scales: {
-                        x: {
-                            grid: {
-                                color: colores1,
-                                borderColor: 'white',             
-                            },
-                            ticks: {
-                                color: 'white',
-                            },  
-                        },
-                        y:{
-                            ticks: {
-                                color: 'white',
-                            },
-                            grid: {
-                                borderColor: 'white'
-                            },
-                        }
+
+            <div class="posiciones">
+                <div id="gr1">
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                    <p id="txl">1985</p>
+                    <p id="txl">Implemenación de la ley</p>
+                </div>
+                <div id="gr2">
+                    <canvas id="myChart2" width="400" height="400"></canvas>
+                    <p id="txl">2002</p>
+                    <p id="txl">Implemenación de la ley</p>
+                </div>
+                <div id="gr3">
+                    <canvas id="myChart3" width="400" height="400"></canvas>
+                    <p id="txl">2016</p>
+                    <p id="txl">Implemenación de la ley</p>
+                </div>
+                <div id="gr4">
+                    <canvas id="myChart4" width="400" height="400"></canvas>
+                    <p id="txl">2017</p>
+                    <p id="txl">Implemenación de la ley</p>
+                </div>
+    <!-- Los gráficos programados a continuación se utilizó la librearia de chart.js (https://www.chartjs.org/docs/3.0.2/charts/doughnut.html.) 
+    También se utilizó ayuda de (https://parzibyte.me/blog/2021/01/03/chart-js-tutorial-ejemplos-graficas-web/) que explicaba como hacer funcionar los comandos necesarios.-->
+                
+                <script>
+                    var ctx=document.getElementById("myChart").getContext("2d");
+                    const etiquetas1 = [ "1981 a 1984", "1986 a 1988"]
+                    const colores1 = ["	#4a4a4a", "red","#4a4a4a"]
+                    const datosMuertos1 = {
+                        label: "Fallecidos en los 4 años",
+                        data: [5399,5102], 
+                        backgroundColor: "#495760", 
+                        borderColor: "white", 
+                        borderWidth: 1,
+                    };
+                    new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: etiquetas1,
+                        datasets: [
+                            datosMuertos1,
+                        ],
                     },
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: ["Fallecidos por accidentes automovilísticos"],
-                            color: "white",
+                    options: {
+                        scales: {
+                            x: {
+                                grid: {
+                                    color: colores1,
+                                    borderColor: 'white',             
+                                },
+                                ticks: {
+                                    color: 'white',
+                                },  
+                            },
+                            y:{
+                                ticks: {
+                                    color: 'white',
+                                },
+                                grid: {
+                                    borderColor: 'white'
+                                },
+                            }
                         },
-    
-                        legend: {
-                            display: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: ["Fallecidos por accidentes automovilísticos"],
+                                color: "white",
+                            },
+        
+                            legend: {
+                                display: false,
+                            },
                         },
+                    }
+                    });
+                </script>
+                <script>
+                    var cty=document.getElementById("myChart2").getContext("2d");
+                    const etiquetas2 = [ "1998 a 2001", "2003 a 2006"]
+                    const colores2 = ["	#4a4a4a", "red","#4a4a4a"]
+                    const datosMuertos2 = {
+                        label: "Fallecidos en los 4 años",
+                        data: [ 6874,6738], 
+                        backgroundColor: "#495760", 
+                        borderColor: "white", 
+                        borderWidth: 1,
+                    };
+                    new Chart(cty, {
+                    type: 'bar',
+                    data: {
+                        labels: etiquetas2,
+                        datasets: [
+                            datosMuertos2,
+                        ],
                     },
-                }
-                });
-            </script>
-            <script>
-                var cty=document.getElementById("myChart2").getContext("2d");
-                const etiquetas2 = [ "1998 a 2001", "2003 a 2006"]
-                const colores2 = ["	#4a4a4a", "red","#4a4a4a"]
-                const datosMuertos2 = {
-                    label: "Fallecidos en los 4 años",
-                    data: [ 6874,6738], 
-                    backgroundColor: "#495760", 
-                    borderColor: "white", 
-                    borderWidth: 1,
-                };
-                new Chart(cty, {
-                type: 'bar',
-                data: {
-                    labels: etiquetas2,
-                    datasets: [
-                        datosMuertos2,
-                    ],
-                },
-                options: {
-                    scales: {
-                        x: {
-                            grid: {
-                                color: colores2,
-                                borderColor: 'white',             
+                    options: {
+                        scales: {
+                            x: {
+                                grid: {
+                                    color: colores2,
+                                    borderColor: 'white',             
+                                },
+                                ticks: {
+                                    color: 'white',
+                                }                    
                             },
-                            ticks: {
-                                color: 'white',
-                            }                    
+                            y:{
+                                ticks: {
+                                    color: 'white',
+                                },
+                                grid: {
+                                    borderColor: 'white'
+                                },
+                            }
                         },
-                        y:{
-                            ticks: {
-                                color: 'white',
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: ["Fallecidos por accidentes automovilísticos"],
+                                color: "white",
                             },
-                            grid: {
-                                borderColor: 'white'
-                            },
-                        }
-                    },
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: ["Fallecidos por accidentes automovilísticos"],
-                            color: "white",
-                        },
-    
-                        legend: {
-                            display: false,
+        
+                            legend: {
+                                display: false,
+                            }
                         }
                     }
-                }
-                });
-            </script>
-            <script>
-                var ctz=document.getElementById("myChart3").getContext("2d");
-                const etiquetas3 = [ "2013 a 2015", "2017 a 2019"]
-                const colores3 = ["	#4a4a4a", "red","#4a4a4a"]
-                const datosMuertos3 = {
-                    label: "Fallecidos en los 3 años",
-                    data: [ 40,26],
-                    backgroundColor: "#495760",
-                    borderColor: "white",
-                    borderWidth: 1,
-                };
-                new Chart(ctz, {
-                type: 'bar',
-                data: {
-                    labels: etiquetas3,
-                    datasets: [
-                        datosMuertos3,
-                    ],
-                },
-                options: {
-                    scales: {
-                        x: {
-                            grid: {
-                                color: colores3,
-                                borderColor: 'white',             
-                            },
-                            ticks: {
-                                color: 'white',
-                            }                    
-                        },
-                        y:{
-                            ticks: {
-                                color: 'white',
-                            },
-                            grid: {
-                                borderColor: 'white'
-                            },
-                        }
+                    });
+                </script>
+                <script>
+                    var ctz=document.getElementById("myChart3").getContext("2d");
+                    const etiquetas3 = [ "2013 a 2015", "2017 a 2019"]
+                    const colores3 = ["	#4a4a4a", "red","#4a4a4a"]
+                    const datosMuertos3 = {
+                        label: "Fallecidos en los 3 años",
+                        data: [ 40,26],
+                        backgroundColor: "#495760",
+                        borderColor: "white",
+                        borderWidth: 1,
+                    };
+                    new Chart(ctz, {
+                    type: 'bar',
+                    data: {
+                        labels: etiquetas3,
+                        datasets: [
+                            datosMuertos3,
+                        ],
                     },
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: ["Fallecidos entre 4 y 8 años por accidentes automovilísticos"],
-                            color: "white",
+                    options: {
+                        scales: {
+                            x: {
+                                grid: {
+                                    color: colores3,
+                                    borderColor: 'white',             
+                                },
+                                ticks: {
+                                    color: 'white',
+                                }                    
+                            },
+                            y:{
+                                ticks: {
+                                    color: 'white',
+                                },
+                                grid: {
+                                    borderColor: 'white'
+                                },
+                            }
                         },
-    
-                        legend: {
-                            display: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: ["Fallecidos entre 4 y 8 años por accidentes automovilísticos"],
+                                color: "white",
+                            },
+        
+                            legend: {
+                                display: false,
+                            }
                         }
                     }
-                }
-                });
-            </script>
-            <script>
-                var ctw=document.getElementById("myChart4").getContext("2d");
-                const etiquetas4 = [ "2015 a 2016", "2018 a 2019"]
-                const colores4 = ["	#4a4a4a", "red","#4a4a4a"]
-                const datosMuertos4 = {
-                    label: "Fallecidos en los 2 años",
-                    data: [ 1406,1348],
-                    backgroundColor: "#495760",
-                    borderColor: "white",
-                    borderWidth: 1,
-                };
-                new Chart(ctw, {
-                type: 'bar',
-                data: {
-                    labels: etiquetas4,
-                    datasets: [
-                        datosMuertos4,
-                    ],
-                },
-                options: {
-                    scales: {
-                        x: {
-                            grid: {
-                                color: colores4,
-                                borderColor: 'white',             
-                            },
-                            ticks: {
-                                color: 'white',
-                            }                    
-                        },
-                        y:{
-                            ticks: {
-                                color: 'white',
-                            },
-                            grid: {
-                                borderColor: 'white'
-                            },
-                        }
+                    });
+                </script>
+                <script>
+                    var ctw=document.getElementById("myChart4").getContext("2d");
+                    const etiquetas4 = [ "2015 a 2016", "2018 a 2019"]
+                    const colores4 = ["	#4a4a4a", "red","#4a4a4a"]
+                    const datosMuertos4 = {
+                        label: "Fallecidos en los 2 años",
+                        data: [ 1406,1348],
+                        backgroundColor: "#495760",
+                        borderColor: "white",
+                        borderWidth: 1,
+                    };
+                    new Chart(ctw, {
+                    type: 'bar',
+                    data: {
+                        labels: etiquetas4,
+                        datasets: [
+                            datosMuertos4,
+                        ],
                     },
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: ["Conductores fallecidos por accidentes automovilísticos"],
-                            color: "white",
+                    options: {
+                        scales: {
+                            x: {
+                                grid: {
+                                    color: colores4,
+                                    borderColor: 'white',             
+                                },
+                                ticks: {
+                                    color: 'white',
+                                }                    
+                            },
+                            y:{
+                                ticks: {
+                                    color: 'white',
+                                },
+                                grid: {
+                                    borderColor: 'white'
+                                },
+                            }
                         },
-    
-                        legend: {
-                            display: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: ["Conductores fallecidos por accidentes automovilísticos"],
+                                color: "white",
+                            },
+        
+                            legend: {
+                                display: false,
+                            }
                         }
                     }
-                }
-                });
-            </script>
-        <p id="fuente1">Fuentes: https://www.conaset.cl/programa/observatorio-datos-estadistica/biblioteca-observatorio/estadisticas-generales/</p>
+                    });
+                </script>
+            </div>
+
+        <div id="fondo">
+            <p id="funte1">Fuentes: https://www.conaset.cl/programa/observatorio-datos-estadistica/biblioteca-observatorio/estadisticas-generales/</p>
+        </div>
     </body>
 
 </hmtl>

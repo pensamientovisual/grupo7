@@ -92,6 +92,7 @@
   width: 55px;
 }
 .txcinad{
+  font-family: letra;
   position: relative;
   text-align: left;
   bottom: 200px;
@@ -102,6 +103,7 @@
 .txcinat{
   position: relative;
   text-align: left;
+  font-family: letra;
   bottom: 200px;
   padding-right: 60%; 
   color: white;
@@ -109,6 +111,7 @@
 }
 .txsilla{  
   position: relative;
+  font-family: letra;
   text-align: left;
   bottom: 200px;
   padding-right: 60%; 
@@ -118,12 +121,17 @@
 .txairbag{  
   position: relative;
   text-align: left;
+  font-family: letra;
   bottom: 200px;
   padding-right: 60%; 
   color: white;
   padding-left: 40px;
 }
-
+.posiciones{
+  position: relative;
+  left: 670px;
+  bottom: 700px;
+}
 
 
 .botones{
@@ -136,17 +144,26 @@
 }
 #gr1{
   width:600px;
+  position: relative;
+  bottom: 80px;
 }
 #gr2{
   width:600px;
+  position: relative;
+  bottom: 100px;
 }
 #gr3{
   width:600px;
+  position: relative;
+  bottom: 1000px;
 }
 #gr4{
   width:600px;
+  position: relative;
+  bottom: 40px;
 }
 #fuente1{
   font-family: letra;
+
 }
 
