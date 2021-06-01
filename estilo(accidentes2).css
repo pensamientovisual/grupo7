@@ -58,7 +58,8 @@
 }
 #instruccion{
     font-family: letra;
-    font-size: 20px;
+    font-size: 17px;
+    text-align: justify;
 }
 
 #g1{
@@ -179,4 +180,6 @@
 }
 #fondo{
     font-family: letra;
+    font-size: 12px;
+    color: white;
 }

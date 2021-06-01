@@ -41,8 +41,11 @@
   background-color:  #323538;
   height: 20px;
   margin: 0%;
-
+  font-family: letra;
+  font-size: 12px;
+  color: white;
 }
+
 #lineas{
   background-color: #323538;
   height: 100px;
@@ -184,6 +187,7 @@ body{
 }
 #fuentes1{
   font-family: letra;
+  text-align: left;
 }
 
 

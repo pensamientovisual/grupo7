@@ -33,6 +33,7 @@
 #instruccion{
   font-family: letra;
   font-size: 17px;
+  text-align: justify;
 }
 
 #lineas{
@@ -166,6 +167,8 @@
 }
 #fuente1{
   font-family: letra;
+  font-size: 12px;
+  color: white;
 
 }
 #txl{
