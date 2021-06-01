@@ -107,7 +107,7 @@ body{
     bottom:800px;
     left: -200px;
     color: white;
-    font-family:letratexto;
+    font-family:letra;
     font-size: 30px;
 }
 .maloderecha{
@@ -117,7 +117,7 @@ body{
     bottom: 1100px;
     left: 670px;
     color: white;
-    font-family:letratexto;
+    font-family:letra;
     font-size: 30px;
 }
 .medianoizquierda{
@@ -127,7 +127,7 @@ body{
     bottom:900px;
     left: -250px;
     color: white;
-    font-family:letratexto;
+    font-family:letra;
     font-size: 30px;
 }
 .medianoderecha{
@@ -138,7 +138,7 @@ body{
     left: 200px;
     bottom: 900px;
     color: white;
-    font-family:letratexto;
+    font-family:letra;
     font-size: 30px;
 }
 .buenoizquierda{
@@ -148,7 +148,7 @@ body{
     bottom:900px;
     left: -250px;
     color: white;
-    font-family:letratexto;
+    font-family:letra;
     font-size: 30px;
 }
 .buenoderecha{
@@ -158,25 +158,25 @@ body{
     bottom: 900px;
     left: 200px;
     color: white;
-    font-family:letratexto;
+    font-family:letra;
     font-size: 30px;
 }
 .tr{
     text-align: center;
     background-color: red;
-    font-family:letratexto;
+    font-family:letra;
     font-size:30px;
 }
 .tv{
     text-align: center;
     background-color: #2EDF0A;
-    font-family:letratexto;
+    font-family:letra;
     font-size:30px;
 }
 .ta{
     text-align: center;
     background-color: yellow;
-    font-family:letratexto;
+    font-family:letra;
     font-size:30px;
 }
 
