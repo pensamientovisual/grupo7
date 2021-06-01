@@ -131,6 +131,8 @@
   position: relative;
   left: 670px;
   bottom: 700px;
+  height:0px;
+  width:0px;
 }
 
 
@@ -150,12 +152,12 @@
 #gr2{
   width:600px;
   position: relative;
-  bottom: 100px;
+  bottom: 70px;
 }
 #gr3{
   width:600px;
   position: relative;
-  bottom: 1000px;
+  bottom: 110px;
 }
 #gr4{
   width:600px;
@@ -166,4 +168,14 @@
   font-family: letra;
 
 }
+#txl{
+  color:#FF3939;
+  font-family: letra;
+  text-align: center;
+  position:relative;
+  font-size:13px;
+  left:17px;
+  bottom:25px;
+}
+
 

@@ -101,6 +101,10 @@ $(document).ready(function(){
         $(".txcinat").hide();
         $(".txsilla").show();
         $(".txairbag").hide();
+        $("#gr1").hide();
+        $("#gr2").hide();
+        $("#gr3").show();
+        $("#gr4").hide();
     });
 
     $("#airbag").mouseenter(function(){
